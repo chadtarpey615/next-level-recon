@@ -1,9 +1,12 @@
 import React from 'react'
-
+import Form from "../components/Form/Form";
+import Button from "../components/Button/Button"
 const Contact = () => {
     return (
         <div>
-            <h1>This where will we show how to get in touch with you for getting that work done son !!!!!</h1>
+            <h1>Next-Level-Contact Info</h1>
+            <Form />
+            {/* <Button /> */}
         </div>
     )
 }
