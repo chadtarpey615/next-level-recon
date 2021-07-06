@@ -8,7 +8,15 @@ const Form = () => {
     const [number, setNumber] = useState("");
 
     const handleSubmit = (event) => {
-        axios.post("https://localhost3001/")
+        axios.post("http://localhost:3001/api/customers/create", {
+            name: name,
+            email: email,
+            number: number
+        })
+            .then(res => {
+                console.log("hit")
+                console.log(res)
+            })
     }
     return (
         <form>
@@ -18,7 +26,8 @@ const Form = () => {
             <input type="text" placeholder="Please enter your email address" onChange={(e) => setEmail(e.target.value)} />
             <label htmlFor="number"></label>
             <input type="number" placeholder="Please enter your phone number to best reach you at " onChange={(e) => setNumber(e.target.value)} />
-            <Button onClick={handleSubmit} />
+            {/* <Button onClick={handleSubmit} /> */}
+            <button onClick={handleSubmit}>click me </button>
         </form>
     )
 }

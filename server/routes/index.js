@@ -1,22 +1,13 @@
-const express = require("express");
-const app = express();
-const cors = require("cors");
-app.use(express.json());
-const db = require('../config/index');
+const path = require("path");
+const router = require("express").Router();
+const apiRoutes = require("./api");
 
-app.post("/", (req, res) => {
-    const name = req.body.name;
-    const email = req.body.email;
-    const number = req.body.number;
+// API Routes
+router.use("/api", apiRoutes);
 
-    db.query("INSERT INTO customers (name, email, number) VALUES (?, ?, ?)",
-        [name, email, number], (err, result) => {
-            if (err) {
-                console.log(err)
-            } else {
-                res.send("customer added")
-            }
-        }
-    )
+// If no API routes are hit, send the React app
+// router.use(function (req, res) {
+//     res.sendFile(path.join(__dirname, "../client/build/index.html"));
+// });
 
-})
+module.exports = router;
