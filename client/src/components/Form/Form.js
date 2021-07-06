@@ -7,6 +7,7 @@ const Form = () => {
     const [name, setName] = useState("");
     const [email, setEmail] = useState("");
     const [number, setNumber] = useState("");
+    const [message, setMessage] = useState("");
 
     const handleSubmit = (event) => {
         axios.post("http://localhost:3001/api/customers/create", {
@@ -40,7 +41,9 @@ const Form = () => {
             <input type="text" placeholder="Please enter your email address" onChange={(e) => setEmail(e.target.value)} name="email" />
             <label htmlFor="number"></label>
             <input type="number" placeholder="Please enter your phone number to best reach you at " onChange={(e) => setNumber(e.target.value)} name="number" />
-            {/* <Button onClick={handleSubmit} /> */}
+            <label htmlFor="message"></label>
+            <input className="message" type="text" placeholder="Please leave a detailed message " onChange={(e) => setMessage(e.target.value)} name="message" />
+
             <button onClick={handleSubmit}>Click here to submit</button>
         </form>
     )
