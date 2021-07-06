@@ -1,16 +1,14 @@
 const express = require("express");
 const router = express.Router();
-// const cors = require("cors");
-// app.use(express.json());
-// const db = require('../config/index');
+const db = require("../../config/db")
 
 
-router.get("/create", (req, res) => {
-    res.send("hello")
-})
+// router.get("/create", (req, res) => {
+//     res.send("hello")
+// })
 
 router.post("/create", (req, res) => {
-    res.send("<p>hello</p>")
+
     const name = req.body.name;
     const email = req.body.email;
     const number = req.body.number;
