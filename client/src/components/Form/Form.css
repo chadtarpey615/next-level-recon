@@ -4,8 +4,7 @@ form {
     width: auto;
     height: 60px;
     align-items: center;
-    -webkit-box-shadow: 20px 20px 20px 20px #4AE7FF;
-    box-shadow: 20px 20px 20px 20px #4AE7FF;
+    
 }
 
 form  input {
@@ -16,5 +15,7 @@ form  input {
   border: 1px solid #ccc;
   border-radius: 4px;
   box-sizing: border-box;
+  -webkit-box-shadow: 20px 20px 20px 20px #98f108;
+    box-shadow: 20px 20px 20px 20px #324613;
 }
 

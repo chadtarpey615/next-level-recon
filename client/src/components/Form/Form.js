@@ -1,23 +1,24 @@
 import React, { useState } from 'react';
-import Button from "../Button/Button"
+import Button from "../Button/Button";
+import axios from "axios"
 import "./Form.css"
 const Form = () => {
     const [name, setName] = useState("");
     const [email, setEmail] = useState("");
     const [number, setNumber] = useState("");
 
-    const handleChange = (event) => {
-        console.log(event.target.value)
+    const handleSubmit = (event) => {
+        axios.post("https://localhost3001/")
     }
     return (
         <form>
             <label htmlFor="name" ></label>
-            <input type="text" placeholder="Please enter your name.." onChange={handleChange} />
+            <input type="text" placeholder="Please enter your name.." onChange={(e) => setName(e.target.value)} />
             <label htmlFor="email"></label>
-            <input type="text" placeholder="Please enter your email address" onChange={handleChange} />
+            <input type="text" placeholder="Please enter your email address" onChange={(e) => setEmail(e.target.value)} />
             <label htmlFor="number"></label>
-            <input type="number" placeholder="Please enter your phone number to best reach you at " onChange={handleChange} />
-            <Button />
+            <input type="number" placeholder="Please enter your phone number to best reach you at " onChange={(e) => setNumber(e.target.value)} />
+            <Button onClick={handleSubmit} />
         </form>
     )
 }
