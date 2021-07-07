@@ -22,9 +22,29 @@
     display: flex;
     justify-content: flex-start;
     align-items: center;
-    justify-content: flex-start;
+}
+.mobile {
+    display: none;
 }
 
 
+@media screen and (max-width: 1000px ) {
+    .navbar a {
+        display: none;
+    }
 
+    .nav-header {
+        display: flex;
+        align-content: flex-start;
+    }
+  .mobile {
+      display: flex;
+      height: auto;
+      margin-left: 30px;
+      margin-right: 30px;
+      align-items: center;
+      align-content: center;
+  }
+
+}
 
