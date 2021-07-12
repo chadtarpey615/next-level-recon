@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
-import Button from "../Button/Button";
+import { Button } from 'reactstrap';
+
 import axios from "axios";
 import emailjs from "emailjs-com";
 import "./Form.css"
@@ -44,7 +45,7 @@ const Form = () => {
             <label htmlFor="message"></label>
             <input className="message" type="text" placeholder="Please leave a detailed message " onChange={(e) => setMessage(e.target.value)} name="message" />
 
-            <button onClick={handleSubmit}>Click here to submit</button>
+            <Button color="success" onClick={handleSubmit}>Click here to submit</Button>
         </form>
     )
 }
