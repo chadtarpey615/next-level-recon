@@ -1,22 +1,22 @@
 
 
-.navbar {
+/* .navbar {
     display: flex;
     justify-content: flex-end;
     box-shadow: 2px 2px 2px 2px;
     background-color: #98f108;
     height: 80px;
-}
+} */
 
-/* .navbar a {
-    display: flex;
+.link {
+    /* display: flex; */
     align-items: center;
     margin-left: 200px;
     font-size: 1.5rem;
     text-decoration: none;
     text-decoration-style: none;
     color: #000;
-} */
+}
 
 /* .navbar .nav-header {
     display: flex;

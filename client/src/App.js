@@ -3,12 +3,11 @@ import Navbar from "../src/components/Navbar/Navbar";
 import { BrowserRouter as Router, Route } from "react-router-dom";
 import Home from "../src/pages/Home"
 import About from "../src/pages/About";
-import Contact from "../src/pages/Contact"
+import Contact from "../src/pages/Contact";
 import './App.css';
 
 function App() {
     return (
-
         <div className="App">
             <Navbar />
             <Router>
