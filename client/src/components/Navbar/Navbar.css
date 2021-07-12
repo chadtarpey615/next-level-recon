@@ -8,7 +8,7 @@
     height: 80px;
 }
 
-.navbar a {
+/* .navbar a {
     display: flex;
     align-items: center;
     margin-left: 200px;
@@ -16,18 +16,18 @@
     text-decoration: none;
     text-decoration-style: none;
     color: #000;
-}
+} */
 
-.navbar .nav-header {
+/* .navbar .nav-header {
     display: flex;
     justify-content: flex-start;
     align-items: center;
-}
-.mobile {
+} */
+/* .mobile {
     display: none;
-}
+} */
 
-
+/* 
 @media screen and (max-width: 1000px ) {
     .navbar a {
         display: none;
@@ -46,5 +46,5 @@
       align-content: center;
   }
 
-}
-
+} */
+ 
