@@ -12,6 +12,12 @@
     color: #fff;
 }
 
+.nav-image {
+    height: 60px;
+    width: 60px;
+    margin-right: 10px;
+}
+
 .link {
     /* display: flex; */
     align-items: center;

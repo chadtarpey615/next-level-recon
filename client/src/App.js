@@ -1,6 +1,7 @@
 import React from "react";
 import Navbar from "../src/components/Navbar/Navbar";
 import { BrowserRouter as Router, Route } from "react-router-dom";
+import { Row, Col } from 'reactstrap';
 import Home from "../src/pages/Home"
 import About from "../src/pages/About";
 import Contact from "../src/pages/Contact";
@@ -18,7 +19,11 @@ function App() {
                 <Route path="/contact" exact render={() => <Contact />} />
                 <Route path="/pricing" exact render={() => <Pricing />} />
             </Router>
-            <Footer />
+
+            {/* <Footer /> */}
+
+
+
 
         </div>
 

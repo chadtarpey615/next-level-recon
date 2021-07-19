@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import { Collapse, Navbar, NavbarToggler, NavbarBrand, Nav, NavItem, NavLink } from 'reactstrap';
+import image from "./../../images/Next-Level-Recon-Logo-TEXT-WEB.JPG"
 import { Row, Col } from 'reactstrap';
 
 
@@ -16,7 +17,8 @@ const Navbars = () => {
             <Row>
                 <Col size="lg-12">
                     <Navbar color="success" dark>
-                        <NavbarBrand href="/" className="mr-auto">Next Level Recon</NavbarBrand>
+                        <NavbarBrand href="/" className="mr-auto"> <img className="nav-image" src={image} alt="company logo" />Next Level Recon</NavbarBrand>
+
                         <NavbarBrand href="/about" className="mr-auto mobile">About</NavbarBrand>
                         <NavbarBrand href="/contact" className="mr-auto mobile">Contact</NavbarBrand>
                         <NavbarToggler onClick={toggleNavbar} className="mr-2" />

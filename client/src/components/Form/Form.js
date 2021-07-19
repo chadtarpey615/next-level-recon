@@ -14,7 +14,8 @@ const Form = () => {
         axios.post("http://localhost:3001/api/customers/create", {
             name: name,
             email: email,
-            number: number
+            number: number,
+            message: message
         })
             .then(res => {
                 console.log("hit")

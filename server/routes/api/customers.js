@@ -12,9 +12,10 @@ router.post("/create", (req, res) => {
     const name = req.body.name;
     const email = req.body.email;
     const number = req.body.number;
+    const message = req.body.message;
 
-    db.query("INSERT INTO customers (name, email, number) VALUES (?, ?, ?)",
-        [name, email, number], (err, result) => {
+    db.query("INSERT INTO customers (name, email, number) VALUES (?, ?, ?, ?)",
+        [name, email, number, message], (err, result) => {
             if (err) {
                 console.log(err)
             } else {
