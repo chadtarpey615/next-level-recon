@@ -31,6 +31,9 @@ const Navbars = () => {
                                 <NavItem>
                                     <NavLink href="/contact">Contact</NavLink>
                                 </NavItem>
+                                <NavItem>
+                                    <NavLink href="/pricing">Pricing</NavLink>
+                                </NavItem>
                             </Nav>
                         </Collapse>
                     </Navbar>
