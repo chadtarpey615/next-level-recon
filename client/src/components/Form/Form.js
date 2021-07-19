@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import { Button } from 'reactstrap';
-
+import { Row, Col } from 'reactstrap';
 import axios from "axios";
 import emailjs from "emailjs-com";
 import "./Form.css"

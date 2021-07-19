@@ -6,7 +6,7 @@ const Prices = () => {
     return (
         <div className="pricing">
             <h1 className="price-title">PRICELIST</h1>
-            <Row>
+            <Row xs="1" md="2" lg="2">
                 <Col>
                     <h4>SPOT REPAIR</h4>
                     <p>$80.00</p>
@@ -15,8 +15,8 @@ const Prices = () => {
                     <h4>BUMPER REPAIR</h4>
                     <p>$145.00</p>
                 </Col>
-            </Row>
-            <Row>
+            </Row >
+            <Row xs="1" md="2" lg="2">
                 <Col>
                     <h4>BUFFING/SCRATCH REPAIR</h4>
                     <p>$65.00</p>
@@ -26,7 +26,7 @@ const Prices = () => {
                     <p>$35.00</p>
                 </Col>
             </Row>
-            <Row>
+            <Row xs="1" md="2" lg="2">
                 <Col>
                     <h4>PAINT A PANEL</h4>
                     <p>$175.00</p>
@@ -35,10 +35,10 @@ const Prices = () => {
                     <h4>WHEEL REPAIR</h4>
                     <p>$40.00</p>
                 </Col>
-            </Row>
+            </Row >
             <h1 className="price-title">ADDITIONAL OPTIONS</h1>
             <h5>(10.00 - 25.00)</h5>
-            <Row>
+            <Row xs="1" md="2" lg="2">
 
                 <Col>
                     <h4>BONDO</h4>
@@ -48,7 +48,7 @@ const Prices = () => {
 
                 </Col>
             </Row>
-            <Row>
+            <Row xs="1" md="2" lg="2">
                 <Col>
                     <h4>EXCESSIVE REPAIR</h4>
                 </Col>
@@ -56,7 +56,7 @@ const Prices = () => {
                     <h4>TRI-COAT COLORS</h4>
                 </Col>
             </Row>
-            <Row>
+            <Row xs="1" md="2" lg="2">
                 <Col>
                     <h4>HYPER SILVER</h4>
                 </Col>
@@ -64,7 +64,7 @@ const Prices = () => {
                     <h4>MACHINED</h4>
                 </Col>
             </Row>
-            <Footer />
+
         </div>
     )
 }
