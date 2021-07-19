@@ -23,6 +23,12 @@
   color: #336424;
 }
 
+img {
+  height: 300px;
+  width: 300px;
+  padding-bottom: 20px;
+}
+
 @media (prefers-reduced-motion: no-preference) {
   .App-logo {
     animation: App-logo-spin infinite 20s linear;

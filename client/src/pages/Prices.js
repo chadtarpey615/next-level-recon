@@ -1,4 +1,5 @@
-import React from 'react'
+import React from 'react';
+import Footer from "../components/footer/Footer"
 import { Row, Col } from 'reactstrap';
 
 const Prices = () => {
@@ -63,6 +64,7 @@ const Prices = () => {
                     <h4>MACHINED</h4>
                 </Col>
             </Row>
+            <Footer />
         </div>
     )
 }
