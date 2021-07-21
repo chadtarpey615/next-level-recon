@@ -13,9 +13,9 @@ const Home = () => {
             document.getElementById("title1").classList.remove("hide")
             document.getElementById("title2").classList.remove("hide")
             document.getElementById("title3").classList.remove("hide")
-            gsap.to("#title", { x: "100%", duration: 2.5, delay: 1.5 });
-            gsap.to("#title1", { x: "-100%", duration: 2.5, delay: 2.5 });
-            gsap.to("#title2", { x: "100%", duration: 2.5, delay: 3.5 });
+            gsap.to("#title", { x: "100%", duration: 3.5, delay: 1.5 });
+            gsap.to("#title1", { x: "-100%", duration: 3.5, delay: 2.5 });
+            gsap.to("#title2", { x: "100%", duration: 3.5, delay: 3.5 });
             gsap.to("#title3", { x: "-100%", duration: 3.5, delay: 4.5 });
 
 
@@ -33,7 +33,7 @@ const Home = () => {
 
     })
     return (
-        <div>
+        <div className="main">
             {/* <h1>Home page for all the work you have done and work that you could for future business!!!!!!!!</h1> */}
             <img className="home-image hide" id="image" src={image} alt="company logo" />
             <h1 className="hide" id="title">Welcome to the website of the best mobile painter in the greater middle Tennessee area!!!!</h1>

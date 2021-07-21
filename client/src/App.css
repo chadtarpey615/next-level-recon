@@ -33,6 +33,17 @@ img {
 .hide {
   display: none;
 }
+
+h1 {
+  font-size:60px;
+}
+
+.about-section {
+  color: black;
+}
+#object-one, #object-two, #object-three {
+  opacity: 0;
+}
 @media (prefers-reduced-motion: no-preference) {
   .App-logo {
     animation: App-logo-spin infinite 20s linear;
