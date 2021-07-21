@@ -15,7 +15,8 @@ const About = () => {
         gsap.to("#object-three", { x: "-100%", duration: 3.5, delay: .1, });
         gsap.to("#object-three", { x: "0%", duration: 3.5, delay: 2, opacity: 1 });
 
-    })
+    });
+
     return (
         <div className="about-section">
             <h1>Available Options and Pricing </h1>

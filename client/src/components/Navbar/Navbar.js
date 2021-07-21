@@ -13,10 +13,10 @@ const Navbars = () => {
     const toggleNavbar = () => setCollapsed(!collapsed);
     return (
 
-        <div className="main-nav">
+        <div className="main-nav ">
             <Row>
                 <Col size="lg-12">
-                    <Navbar color="success" dark>
+                    <Navbar color="success" dark fixed="top">
                         <NavbarBrand href="/" className="mr-auto"> <img className="nav-image" src={image} alt="company logo" />Next Level Recon</NavbarBrand>
 
                         <NavbarBrand href="/about" className="mr-auto mobile">About</NavbarBrand>
