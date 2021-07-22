@@ -23,12 +23,32 @@ const Prices = () => {
                                     <p>${option.price}</p>
                                 </Col>
                             </Row >
-                            <h1 className="price-title">ADDITIONAL OPTIONS</h1>
                         </>
 
                     )
+
                 })
             }
+            <h1 h1 className="price-title" > ADDITIONAL OPTIONS</h1>
+
+            {
+                additionalOptions.map((option) => {
+                    return (
+                        <Row className="special-options d-flex justify-content-start
+                         py-2" xs="1" md="2" lg="2">
+
+                            <Col  >
+                                <h4>{option.name}</h4>
+                            </Col>
+                            <Col  >
+                                <h5>(10.00 - 25.00)</h5>
+                            </Col>
+                        </Row>
+                    )
+
+                })
+            }
+
         </div>
         // <div className="pricing">
         //     <h1 className="price-title">PRICELIST</h1>

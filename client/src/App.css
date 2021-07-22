@@ -49,6 +49,10 @@ h1 {
 .home-image{
   margin-top: 80px;
 }
+
+.special-options {
+  align-items: center;
+}
 @media (prefers-reduced-motion: no-preference) {
   .App-logo {
     animation: App-logo-spin infinite 20s linear;
