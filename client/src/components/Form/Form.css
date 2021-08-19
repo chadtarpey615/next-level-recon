@@ -1,4 +1,4 @@
-form {
+/* form {
     display: flex;
     flex-direction: column;
     width: auto;
@@ -27,4 +27,47 @@ form  input {
     padding: 30px;
 
 }
+ */
 
+   .contact {
+         background: rgb(12, 11, 11);
+         color: #fff;
+         padding: 40px 0;
+
+     }
+   .contact-grid {
+         width: 100%;
+         max-width: 1000px;
+         margin: 0 auto;
+         display: grid;
+         grid-template-columns: 1fr 1fr;
+         grid-gap: 40px;
+     }
+  .contact-form, .contact {
+        display: flex;
+        flex-direction: column;
+
+     }
+ label {
+          margin-top: 20px;
+          font-size: 14px;
+          color: #bbb;
+      }
+  input, textarea {
+          padding: 8px;
+          border: 0;
+          background: rgb(32, 32,32);
+          
+      }
+
+        ::placeholder {
+          color: rgb(100, 100, 100);
+      }
+
+      button {
+          margin-top: 20px;
+          border: 0;
+          background: rgb(11, 88, 41);
+          border-radius: 4px;
+
+      }
