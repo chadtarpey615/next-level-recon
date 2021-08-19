@@ -1,0 +1,23 @@
+.card {
+     background: rgb(255, 255, 255)
+}
+
+    .cards {
+         width: 100%;
+         max-width: 1000px;
+         margin: 0 auto;
+         padding-top: 60px;
+         display: grid;
+         grid-template-columns: 1fr 1fr 1fr ;
+         grid-gap: 20px;
+
+     }
+
+      img {
+         width: 100%;
+     }
+
+       .description {
+         color: #333;
+         padding: 12px;
+     }

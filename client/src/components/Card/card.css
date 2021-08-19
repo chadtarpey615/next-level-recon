@@ -1,0 +1,19 @@
+  .about {
+        padding: 40px 0;
+        background: rgb(224, 224, 224);
+    }
+
+       .about-title, .about-text {
+        width: 100%;
+        max-width: 1000px;
+        margin: 0 auto;
+        text-align: center;
+    }
+
+    .about-text {
+        margin-top: 20px;
+    }
+
+    .content {
+        display: flex;
+    }
