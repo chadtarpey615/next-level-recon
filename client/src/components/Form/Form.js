@@ -11,7 +11,7 @@ const Form = () => {
     const [message, setMessage] = useState("");
 
     const handleSubmit = (event) => {
-        axios.post("http://localhost:3001/api/customers/create", {
+        axios.post("http://localhost:3003/api/customers/create", {
             name: name,
             email: email,
             number: number,

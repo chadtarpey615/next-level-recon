@@ -8,40 +8,22 @@ import { Row, Col } from 'reactstrap';
 import "./Navbar.css"
 const Navbars = () => {
 
-    const [collapsed, setCollapsed] = useState(true);
+    // const [collapsed, setCollapsed] = useState(true);
 
-    const toggleNavbar = () => setCollapsed(!collapsed);
+    // const toggleNavbar = () => setCollapsed(!collapsed);
     return (
 
-        <div className="main-nav ">
-            <Row>
-                <Col size="lg-12">
-                    <Navbar color="success" dark fixed="top">
-                        <NavbarBrand href="/" className="mr-auto"> <img className="nav-image" src={image} alt="company logo" />Next Level Recon</NavbarBrand>
-
-                        <NavbarBrand href="/about" className="mr-auto mobile">About</NavbarBrand>
-                        <NavbarBrand href="/contact" className="mr-auto mobile">Contact</NavbarBrand>
-                        <NavbarToggler onClick={toggleNavbar} className="mr-2" />
-                        <Collapse isOpen={!collapsed} navbar >
-                            <Nav navbar>
-                                <NavItem >
-                                    <NavLink href="/">Home</NavLink>
-                                </NavItem>
-                                <NavItem>
-                                    <NavLink href="/about">About</NavLink>
-                                </NavItem>
-                                <NavItem>
-                                    <NavLink href="/contact">Contact</NavLink>
-                                </NavItem>
-                                <NavItem>
-                                    <NavLink href="/pricing">Pricing</NavLink>
-                                </NavItem>
-                            </Nav>
-                        </Collapse>
-                    </Navbar>
-                </Col>
-            </Row>
-        </div>
+        <nav className="nav-bar">
+            <div className="title-container">
+                <a href="#" class="title">NLR</a>
+            </div>
+            <ul class="nav-links">
+                <li class="nav-link active">Home</li>
+                <li class="nav-link">Service</li>
+                <li class="nav-link">Pricing</li>
+                <li class="nav-link">Contact</li>
+            </ul>
+        </nav>
 
 
     )

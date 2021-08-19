@@ -10,6 +10,6 @@ app.use(express.json());
 app.use(routes);
 
 
-app.listen(3001, (res, req) => {
-    console.log("Server is running 3001")
+app.listen(3003, (res, req) => {
+    console.log("Server is running 3003")
 });

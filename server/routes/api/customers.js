@@ -3,12 +3,11 @@ const router = express.Router();
 const db = require("../../config/db")
 
 
-// router.get("/create", (req, res) => {
-//     res.send("hello")
-// })
+router.get("/create", (req, res) => {
+    res.send("hello")
+})
 
 router.post("/create", (req, res) => {
-
     const name = req.body.name;
     const email = req.body.email;
     const number = req.body.number;
