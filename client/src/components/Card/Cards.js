@@ -1,36 +1,36 @@
 import React, { useEffect } from 'react';
 import { options } from "../../API/Api";
-// import image from "../../images/paint.jpeg"
+import images from "../../images/paint.jpeg";
 import "./cards.css"
 
 
-const Cards = ({ title, text, image }) => {
-    useEffect(() => {
-        // gsap.to("#object-one", { x: "100%", duration: 3.5, delay: 1.5 });
-        console.log(options)
 
-    });
+const Cards = ({ title, text }) => {
+
 
     return (
-        <>
+        <div className="cards">
 
             {
                 options.map((option, i) => {
                     const { name, image } = option;
+                    console.log(image)
                     return (
-                        <div className="cards">
-                            <div className="card">
-                                <img src={image} alt={name} />
-                                <p className="description">{name}</p>
-                            </div>
 
+                        <div className="card" data-aos="flip-left"
+                            data-aos-easing="ease-out-cubic"
+                            data-aos-duration="2000">>
+                            <img src={images} alt={name} />
+                            <p className="description">{name}</p>
                         </div>
+
+
                     )
 
                 }
                 )
             }
-        </>
+        </div>
     )
 
 

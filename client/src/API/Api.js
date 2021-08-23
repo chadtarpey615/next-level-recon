@@ -3,6 +3,7 @@ export const options = [
     {
         name: "SPOT REPAIR",
         price: 80.00,
+        // image: "../images/paint.jpeg",
         image: "../images/paint.jpeg"
 
     },
