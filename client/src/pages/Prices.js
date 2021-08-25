@@ -14,16 +14,13 @@ const Prices = () => {
             {
                 options.map(option => {
                     return (
-                        <>
-                            <Row xs="1" md="2" lg="2">
-                                <Col>
-                                    <h4>{option.name}</h4>
-                                </Col>
-                                <Col>
-                                    <p>${option.price}</p>
-                                </Col>
-                            </Row >
-                        </>
+                        <div className="price-list">
+
+                            <h2>{option.name}</h2>
+
+                            <h4>${option.price}</h4>
+
+                        </div>
 
                     )
 
@@ -34,16 +31,14 @@ const Prices = () => {
             {
                 additionalOptions.map((option) => {
                     return (
-                        <Row className="special-options d-flex justify-content-start
-                         py-2" xs="1" md="2" lg="2">
+                        <div className="price-list">
 
-                            <Col  >
-                                <h4>{option.name}</h4>
-                            </Col>
-                            <Col  >
-                                <h5>(10.00 - 25.00)</h5>
-                            </Col>
-                        </Row>
+
+                            <h2>{option.name}</h2>
+
+                            <h4>(10.00 - 25.00)</h4>
+                        </div>
+
                     )
 
                 })
