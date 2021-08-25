@@ -10,7 +10,7 @@ const About = () => {
 
 
     return (
-        <div className="about-section">
+        <div className="about-section" id="about">
             <Card />
             <Cards />
             {/* <Cards title="Quarters & Hoods" text="Quarters and Hood refinish" image={Image} />

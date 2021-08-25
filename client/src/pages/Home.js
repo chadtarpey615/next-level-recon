@@ -38,7 +38,8 @@ const Home = () => {
 
     // })
     return (
-        <div className="main">
+        <div className="main" id="home">
+            <h1>Next Level Recon</h1>
 
         </div>
     )

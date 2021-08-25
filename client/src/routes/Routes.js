@@ -1,5 +1,6 @@
 import React from 'react';
 import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
+import { Link, animateScroll as scroll } from "react-scroll";
 import Home from "../pages/Home";
 import About from "../pages/About";
 import Contact from "../pages/Contact";
@@ -25,6 +26,7 @@ const Routes = (props) => {
             <Route>
                 <Prices path="/pricing" />
             </Route>
+
         </Switch>
 
     )
