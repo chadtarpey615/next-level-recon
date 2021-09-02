@@ -11,7 +11,13 @@ const About = () => {
 
     return (
         <div className="about-section" id="about">
-            <Card />
+            <Row>
+                <Col size="sm-12">
+                    <Card />
+
+                </Col>
+
+            </Row>
             <Cards />
             {/* <Cards title="Quarters & Hoods" text="Quarters and Hood refinish" image={Image} />
             <Cards title="Bumpers" text="Bumpers refinish" image={Image} />

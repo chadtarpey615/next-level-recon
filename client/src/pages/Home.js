@@ -39,7 +39,7 @@ const Home = () => {
     // })
     return (
         <div className="main" id="home">
-            <h1>Next Level Recon</h1>
+            <h1 className="mx-auto text-center well-lg">Next Level Recon</h1>
 
         </div>
     )

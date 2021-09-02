@@ -19,7 +19,7 @@ const Cards = ({ title, text }) => {
 
                         <div className="card" data-aos="flip-left"
                             data-aos-easing="ease-out-cubic"
-                            data-aos-duration="2000">>
+                            data-aos-duration="2000">
                             <img src={images} alt={name} />
                             <p className="description">{name}</p>
                         </div>

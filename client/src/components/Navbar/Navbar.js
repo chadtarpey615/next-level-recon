@@ -15,7 +15,7 @@ const Navbars = () => {
     // const toggleNavbar = () => setCollapsed(!collapsed);
     return (
         <header>
-            <nav className="nav-bar">
+            <nav className="navbar-dark bg-primary mb-3">
                 <div className="title-container">
                     <a href="#" class="title">NLR</a>
                 </div>

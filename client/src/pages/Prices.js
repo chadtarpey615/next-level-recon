@@ -10,7 +10,10 @@ const Prices = () => {
     })
     return (
         <div className="pricing">
-            <h1 className="price-title">PRICELIST</h1>
+            <h1 className="price-title" data-aos="zoom-in
+        "
+                data-aos-easing="ease-out-cubic"
+                data-aos-duration="2000">PRICELIST</h1>
             {
                 options.map(option => {
                     return (

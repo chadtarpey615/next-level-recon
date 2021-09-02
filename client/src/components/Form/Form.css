@@ -1,4 +1,4 @@
-/* form {
+ form {
     display: flex;
     flex-direction: column;
     width: auto;
@@ -7,7 +7,6 @@
     margin-top: 110px;
     border-bottom: 1px;
 }
-
 
 
 form  input {
@@ -27,7 +26,7 @@ form  input {
     padding: 30px;
 
 }
- */
+ 
  .App {
          background: rgb(12, 11, 11);
 
@@ -65,7 +64,7 @@ form  input {
         display: flex;
         flex-direction: column;
 
-     }
+     } 
  label {
           margin-top: 20px;
           font-size: 14px;
@@ -88,4 +87,9 @@ form  input {
           background: rgb(11, 88, 41);
           border-radius: 4px;
 
+      }
+
+      .footer-image {
+          width: 300px;
+          display: grid;
       }
