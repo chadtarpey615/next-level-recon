@@ -7,70 +7,39 @@ import { Link, animateScroll as scroll } from "react-scroll";
 
 
 
-import "./Navbar.css"
 const Navbars = () => {
 
-    // const [collapsed, setCollapsed] = useState(true);
-
-    // const toggleNavbar = () => setCollapsed(!collapsed);
     return (
-        <header>
-            <nav className="navbar-dark bg-primary mb-3">
-                <div className="title-container">
-                    <a href="#" class="title">NLR</a>
-                </div>
-                <ul class="nav-links">
-                    {/* <li class="nav-link active">Home</li>
-                    <li class="nav-link">Service</li>
-                    <li class="nav-link">Pricing</li>
-                    <li class="nav-link">Contact</li> */}
-                    <Link
-                        activeClass="active"
-                        to="home"
-                        spy={true}
-                        smooth={true}
-                        offset={-70}
-                        duration={800}
-                        activeClassName="text-white"
-                        className="d-inline-block align-top">
+        <div className="navbar mb-2 shadow-lg bg-neutral text-neutral-content rounded-box">
+            <div className="flex-none px-2 mx-2">
+                <span className="text-lg font-bold">
+                    Next-Level-Recon
+          </span>
+            </div>
+            <div className="flex-1 px-2 mx-2">
+                <div className="items-stretch hidden lg:flex">
+                    <a className="btn btn-ghost btn-sm rounded-btn">
                         Home
-            </Link>
-                    <Link
-                        activeClass="active"
-                        to="about"
-                        spy={true}
-                        smooth={true}
-                        offset={-70}
-                        duration={800}
-                        activeClassName="text-white"
-                        className="d-inline-block align-top">
+            </a>
+
+                    <a className="btn btn-ghost btn-sm rounded-btn">
                         About
-            </Link>
-                    <Link
-                        activeClass="active"
-                        to="pricing"
-                        spy={true}
-                        smooth={true}
-                        offset={-70}
-                        duration={800}
-                        activeClassName="text-white"
-                        className="d-inline-block align-top">
-                        Pricing
-            </Link>
-                    <Link
-                        activeClass="active"
-                        to="contact"
-                        spy={true}
-                        smooth={true}
-                        offset={-70}
-                        duration={800}
-                        activeClassName="text-white"
-                        className="d-inline-block align-top">
+            </a>
+                    <a className="btn btn-ghost btn-sm rounded-btn">
                         Contact
-            </Link>
-                </ul>
-            </nav>
-        </header>
+            </a>
+                </div>
+            </div>
+
+            <div className="flex-none pb-3">
+                <button className="btn btn-square btn-ghost">
+                    <img src={image} alt="" />
+                </button>
+            </div>
+        </div>
+
+
+
 
 
 

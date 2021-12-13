@@ -48,7 +48,7 @@ const Form = () => {
                     <label htmlFor="message"></label>
                     <input className="message" type="text" placeholder="Please leave a detailed message " onChange={(e) => setMessage(e.target.value)} name="message" />
 
-                    <Button color="success" onClick={handleSubmit}>Click here to submit</Button>
+                    {/* <Button color="success" onClick={handleSubmit}>Click here to submit</Button> */}
                 </div>
 
             </div>

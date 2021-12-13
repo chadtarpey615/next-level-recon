@@ -1,5 +1,9 @@
 import React, { useEffect } from "react";
 import Navbar from "../src/components/Navbar/Navbar";
+import Hero from "./components/Hero/Hero"
+import Divider from "./components/Divider/Divider"
+import Cards from "./components/Card/Cards"
+import Footer from "./components/footer/Footer"
 import { BrowserRouter as Router, Route } from "react-router-dom";
 import Routes from "./routes/Routes"
 import { Row, Col } from "reactstrap";
@@ -24,21 +28,12 @@ function App() {
     return (
         <div className="App">
             <Navbar />
-            <Home />
+            <Hero />
+            <Divider />
+            <Cards />
+            <Divider />
 
-
-            <Row>
-                <Col size="md-6">
-                    <About />
-
-                </Col>
-                <Col size="md-6">
-                    <Pricing />
-
-                </Col>
-
-            </Row>
-            <Contact />
+            <Footer />
         </div>
 
     );
